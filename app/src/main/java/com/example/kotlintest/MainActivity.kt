@@ -25,9 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        val cat = object {
-            val name = "Barsik"
+        var cat = object {
+            var name = "Barsik"
         }
+        cat.name = "Barsik"
+        catName(cat.name)
 
         //var - изменяемая
         //val - не изменяемая
@@ -49,9 +51,19 @@ class MainActivity : AppCompatActivity() {
         Log.d("@@@", noteTest.distance.toString())
 
         val dataClass1 = NoteTest(50,200)
-        val dataClass2 = dataClass1.copy(30,150)
+        val dataClass2 = dataClass1.copy(distance = 350)
 
         Log.d("@@@", dataClass2.toString())
+        Log.d("@@@", catName("Barsik"))
 
+
+    }
+
+    private fun catName(name: String) : String {
+        return if(name == "Barsik"){
+            "Имя совпадает"
+        }else{
+            "не совпадает"
+        }
     }
 }
