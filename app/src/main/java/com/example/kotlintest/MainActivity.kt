@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         })
 
+        homeWorkOne()
+    }
+    private fun homeWorkOne() {
         var cat = object {
             var name = "Barsik"
         }
@@ -55,8 +58,6 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("@@@", dataClass2.toString())
         Log.d("@@@", catName("Barsik"))
-
-
     }
 
     private fun catName(name: String) : String {
