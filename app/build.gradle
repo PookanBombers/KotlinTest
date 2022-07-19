@@ -6,8 +6,8 @@ apply plugin: 'kotlin-android'
 android {
     compileSdk 32
 
-    buildFeatures{
-        viewBinding true
+        viewBinding{
+        enabled = true
     }
 
     defaultConfig {
