@@ -1,4 +1,4 @@
-package com.example.kotlintest
+package com.example.kotlintest.HomeWorkOne
 
 object NewTest {
     public var obj = "обект номер один"
